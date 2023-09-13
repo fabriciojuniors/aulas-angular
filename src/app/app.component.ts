@@ -25,7 +25,7 @@ export class AppComponent {
   */
 
   //ATRIBUTOS
-  public nome: string = "TESTE";
+  public nome: string = "BRUNA";
   private sobrenome: string = "SOBRENOME";
   public isAtivo : boolean = true;
 
@@ -122,6 +122,10 @@ export class AppComponent {
 
   public onInputKeyPress(evento: any):void {
     console.log('INPUT KEY PRESS');
+  }
+
+  public onEvento(evento: string) {
+      console.log("RETORNO DO EVENTO: " + evento);      
   }
 
 }

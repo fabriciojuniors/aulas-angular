@@ -1,16 +1,16 @@
-<h1>Hello, World!</h1>
+<!-- <h1>Hello, World!</h1>
 
 <p> {{nome}} </p>
 <p>{{getSobrenome()}}</p>
 
 <p>{{cliente.nome}}</p>
 
-<button (click)="clicouNoBotao()">CLIQUE AQUI!!!</button>
+<button (click)="clicouNoBotao()">CLIQUE AQUI!!!</button> -->
 
 <!-- VERSÃO JS PURO -->
 <!-- <button onclick="clicouNoBotao()">CLIQUE AQUI!!!</button> -->
 
-<br>
+<!-- <br>
 <input type="text" placeholder="Informe seu nome" 
       (change)="onInputNomeChange($event)">
 
@@ -47,4 +47,7 @@
       <td>{{cliente.ativo}}</td>
     </tr>
   </tbody>
-</table>
+</table> -->
+
+<app-novo [teste]="nome" 
+          (evento)="onEvento($event)"></app-novo>
