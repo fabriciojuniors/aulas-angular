@@ -1,0 +1,41 @@
+<label for="nome">Nome</label>
+<input type="text" 
+       placeholder="Nome"
+       id="nome" 
+       name="nome"
+       [(ngModel)]="nome" />
+
+<br>
+<button (click)="setNome()">CLIQUE AQUI!</button>
+
+<br>
+
+<p>Olá, {{nome}}</p>
+
+<hr>
+
+<h3>Formulário</h3>
+
+<div>
+    <strong> Formulário válido: {{formulario?.valid ? 'Sim' :  'Não'}} </strong>
+</div>
+
+<form #formulario="ngForm" (ngSubmit)="onFormularioSubmit()">
+    <label for="descricao">Descrição</label>
+    <input type="text" 
+            name="descricao" 
+            id="descricao" 
+            ngModel required>
+    <br>
+
+    <label for="preco">Preço</label>
+    <input type="number" 
+            name="preco" 
+            id="preco"
+            min="1"
+            max="99"
+            ngModel> 
+    <br>
+
+    <input type="submit" value="Salvar"/>
+</form>
