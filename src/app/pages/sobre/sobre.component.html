@@ -1,0 +1,19 @@
+
+<h1>Olá, {{nome}}</h1>
+
+
+<label for="aliquota">Alíquota</label>
+<input type="number" 
+        name="aliquota" 
+        id="aliquota" 
+        [(ngModel)]="aliquota">
+
+<br>
+
+<label for="valorProdutos">Valor Produtos</label>
+<input type="number" 
+        name="valorProdutos" 
+        id="valorProdutos" 
+        [(ngModel)]="valorProdutos">
+<br>        
+<button (click)="onCalcular()">Calcular</button>        

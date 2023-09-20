@@ -1,0 +1,6 @@
+{
+    "clientes": [
+        {"id": 1, "nome": "José", "limiteCredito": 1500},
+        {"id": 2, "nome": "Maria", "limiteCredito": 3450}
+    ]
+}

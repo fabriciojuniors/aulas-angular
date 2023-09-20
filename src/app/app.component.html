@@ -52,4 +52,9 @@
 <!-- <app-novo [teste]="nome" 
           (evento)="onEvento($event)"></app-novo> -->
 
-<app-formulario></app-formulario>          
+<!-- <app-formulario></app-formulario>           -->
+
+<a routerLink="/sobre">Sobre sem parâmetro</a> <br>
+<a [routerLink]="['/sobre', 'TESTE']">Sobre com parâmetro</a>
+
+<router-outlet></router-outlet>
