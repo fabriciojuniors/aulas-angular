@@ -32,19 +32,19 @@ export class AppComponent {
   public cliente: Cliente = {
     id: 1,
     nome: "João",
-    ativo: true
+    limiteCredito: 100
   }
 
   public clientes: Cliente[] = [
     {
       id: 1,
       nome: "João",
-      ativo: true
+      limiteCredito: 100
     },
     {
       id: 2,
       nome: "Maria",
-      ativo: true
+      limiteCredito: 100
     }
   ]
 

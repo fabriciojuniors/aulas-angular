@@ -7,18 +7,22 @@ import { NovoComponent } from './components/novo/novo.component';
 import { FormsModule } from '@angular/forms';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CadastroClientesComponent } from './pages/cadastro-clientes/cadastro-clientes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NovoComponent,
     FormularioComponent,
-    SobreComponent
+    SobreComponent,
+    CadastroClientesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

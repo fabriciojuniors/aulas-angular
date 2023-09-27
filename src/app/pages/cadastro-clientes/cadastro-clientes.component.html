@@ -1,0 +1,36 @@
+
+<form #formulario="ngForm" (ngSubmit)="save(formulario)">
+    <div>
+        <label for="id">Código</label>
+        <input type="number" name="id" id="id" ngModel required>
+    </div>
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" ngModel required>
+    </div>
+    <div>
+        <label for="limiteCredito">Limite de crédito</label>
+        <input type="number" name="limiteCredito" id="limiteCredito" ngModel required>
+    </div>
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Salvar">
+</form>
+
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Limite de crédito</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr *ngFor="let cliente of clientes">
+            <td>{{cliente.id}}</td>
+            <td>{{cliente.nome}}</td>
+            <td>{{cliente.limiteCredito}}</td>
+        </tr>
+    </tbody>
+</table>
